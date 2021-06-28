@@ -12,7 +12,7 @@ def evals(pepxmlfile):
     print(f'processing {core}...')
     for spectrum in pep_dict:
         
-        if 'DECOY' in el['search_hit'][0]['proteins'][0]['protein']:
+        if 'DECOY' not in el['search_hit'][0]['proteins'][0]['protein']:
             continue
         if 'search_hit' in spectrum.keys():
             e_val = spectrum['search_hit'][0]['search_score']['expect']
