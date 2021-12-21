@@ -131,7 +131,7 @@ In xinteract, use *-OC</path/to/param.txt*> to specify a parameter file for fixe
 /local/tpp/bin/xinteract  -p0 -OMNEA -OC</path/to/param.txt> -N<outputName>  <input.pep.xml>
 ```
 
-We also provide a docker image named as *tpp5.1cdd_option:1.1*. Here is the command line to use this image. 
+(To be added) We also provide a docker image named as *tpp5.1cdd_option:1.1*. Here is the command line to use this image. 
 
 ```bash
 docker run -v `pwd`:`pwd` -v </path/to/fasta>:</path/to/fasta> -v --workdir `pwd`  -it tpp5.1cdd_option:1.2 /local/tpp/bin/xinteract  -p0 -OMNEA -OC/data/wulong/param.txt -N<outputName>  <input.pep.xml> 
