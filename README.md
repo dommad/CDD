@@ -125,16 +125,20 @@ make install
 
 ## Run with  command line Option -OC
 
-In xinteract, use *-OC</path/to/param.txt*> to specify a parameter file for fixed Gumbel distribution. For example.
+In xinteract, use *-OC</path/to/param.txt*> to specify a parameter file for fixed Gumbel distributions (CDD models). For example:
 
 ```bash
 /local/tpp/bin/xinteract  -p0 -OMNEA -OC</path/to/param.txt> -N<outputName>  <input.pep.xml>
 ```
 
-(To be added) We also provide a docker image named as *tpp5.1cdd_option:1.1*. Here is the command line to use this image. 
+
+## Use TPP 5.1 with CDD from Docker image
+
+
+We also provide a docker image named as *tpp5.1cdd_option:1.1*; it is now available in Docker Hub at https://hub.docker.com/r/lwuhkust/tpp5.1cdd. Here is the command line to use this image. 
 
 ```bash
-docker run -v `pwd`:`pwd` -v </path/to/fasta>:</path/to/fasta> -v --workdir `pwd`  -it tpp5.1cdd_option:1.2 /local/tpp/bin/xinteract  -p0 -OMNEA -OC/data/wulong/param.txt -N<outputName>  <input.pep.xml> 
+docker run -v `pwd`:`pwd` -v </path/to/fasta>:</path/to/fasta> -v --workdir `pwd`  -it lwuhkust/tpp5.1cdd /local/tpp/bin/xinteract  -p0 -OMNEA -OC/data/wulong/param.txt  -N<outputName>  <input.pep.xml>
 ```
 
  
