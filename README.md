@@ -135,7 +135,7 @@ In xinteract, use *-OC</path/to/param.txt*> to specify a parameter file for fixe
 ## Use TPP 5.1 with CDD from Docker image
 
 
-We also provide a docker image named as *tpp5.1cdd_option:1.1*; it is now available in Docker Hub at https://hub.docker.com/r/lwuhkust/tpp5.1cdd. Here is the command line to use this image. 
+We also provide a docker image named as *tpp5.1cdd*; it is now available in Docker Hub at https://hub.docker.com/r/lwuhkust/tpp5.1cdd. Here is the command line to use this image after pulling from Docker Hub:
 
 ```bash
 docker run -v `pwd`:`pwd` -v </path/to/fasta>:</path/to/fasta> -v --workdir `pwd`  -it lwuhkust/tpp5.1cdd /local/tpp/bin/xinteract  -p0 -OMNEA -OC/data/wulong/param.txt  -N<outputName>  <input.pep.xml>
